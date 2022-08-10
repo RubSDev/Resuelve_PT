@@ -156,7 +156,7 @@ export default function Home() {
                   >
                     Seleccione una institución
                   </option>
-                  {instituciones.map((institucion, index) => (
+                  {instituciones.map((institucion) => (
                     <option
                       value={institucion.name}
                       type="text"
