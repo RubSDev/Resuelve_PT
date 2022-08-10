@@ -187,7 +187,7 @@ export default function Home() {
                         Seleccione una opción
                       </option>
                       {dataRegister.institution === "Bancos" &&
-                        bancos.map((banco, index) => (
+                        bancos.map((banco) => (
                           <option
                             value={banco.name}
                             type="text"
@@ -198,7 +198,7 @@ export default function Home() {
                           </option>
                         ))}
                       {dataRegister.institution === "Tiendas departamentales" &&
-                        tiendas.map((tienda, index) => (
+                        tiendas.map((tienda) => (
                           <option
                             value={tienda.name}
                             type="text"
@@ -209,7 +209,7 @@ export default function Home() {
                           </option>
                         ))}
                       {dataRegister.institution === "Financieras" &&
-                        financieras.map((financiera, index) => (
+                        financieras.map((financiera) => (
                           <option
                             value={financiera.name}
                             type="text"
