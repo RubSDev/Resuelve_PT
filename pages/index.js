@@ -158,6 +158,7 @@ export default function Home() {
                   </option>
                   {instituciones.map((institucion) => (
                     <option
+                      key={institucion.id}
                       value={institucion.name}
                       type="text"
                       name="institution"
@@ -189,6 +190,7 @@ export default function Home() {
                       {dataRegister.institution === "Bancos" &&
                         bancos.map((banco) => (
                           <option
+                            key={banco.id}
                             value={banco.name}
                             type="text"
                             name="subInstitution"
@@ -200,6 +202,7 @@ export default function Home() {
                       {dataRegister.institution === "Tiendas departamentales" &&
                         tiendas.map((tienda) => (
                           <option
+                            key={tienda.id}
                             value={tienda.name}
                             type="text"
                             name="tienda"
@@ -211,6 +214,7 @@ export default function Home() {
                       {dataRegister.institution === "Financieras" &&
                         financieras.map((financiera) => (
                           <option
+                            key={financiera.id}
                             value={financiera.name}
                             type="text"
                             name="financiera"
